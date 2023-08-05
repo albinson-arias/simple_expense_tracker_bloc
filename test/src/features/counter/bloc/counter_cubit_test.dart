@@ -1,7 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:simple_expense_tracker_bloc/counter/counter.dart';
+import 'package:simple_expense_tracker_bloc/src/features/counter/bloc/counter_cubit.dart';
 
 void main() {
   group('CounterCubit', () {

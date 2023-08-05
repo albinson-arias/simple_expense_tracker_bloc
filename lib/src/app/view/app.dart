@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simple_expense_tracker_bloc/counter/counter.dart';
-import 'package:simple_expense_tracker_bloc/l10n/l10n.dart';
+import 'package:simple_expense_tracker_bloc/src/features/counter/counter.dart';
+import 'package:simple_expense_tracker_bloc/src/l10n/l10n.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const CounterScreen(),
     );
   }
 }

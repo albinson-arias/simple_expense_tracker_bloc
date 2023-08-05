@@ -3,17 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:simple_expense_tracker_bloc/src/features/counter/counter.dart';
 
-import 'package:simple_expense_tracker_bloc/counter/counter.dart';
-
-import '../../helpers/helpers.dart';
+import '../../../../../helpers/helpers.dart';
 
 class MockCounterCubit extends MockCubit<int> implements CounterCubit {}
 
 void main() {
   group('CounterPage', () {
     testWidgets('renders CounterView', (tester) async {
-      await tester.pumpApp(const CounterPage());
+      await tester.pumpApp(const CounterScreen());
       expect(find.byType(CounterView), findsOneWidget);
     });
   });
